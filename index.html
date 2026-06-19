@@ -1,0 +1,66 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>太虚问道</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <canvas id="gameCanvas" width="1280" height="720" aria-label="太虚问道实时修仙游戏"></canvas>
+
+      <section class="hud top-left">
+        <div class="brand">
+          <span>TAIXU ASCENSION</span>
+          <strong>太虚问道</strong>
+        </div>
+        <div class="vitals">
+          <div class="bar-wrap hp"><span id="hpBar"></span><b id="hpText">0 / 0</b></div>
+          <div class="bar-wrap mana"><span id="manaBar"></span><b id="manaText">0 / 0</b></div>
+          <div class="bar-wrap xp"><span id="xpBar"></span><b id="xpText">0 / 0</b></div>
+        </div>
+      </section>
+
+      <section class="hud top-right">
+        <div class="realm-line">
+          <span>境界</span>
+          <strong id="realmText">炼气一层</strong>
+        </div>
+        <div class="resources">
+          <span id="stoneText">灵石 0</span>
+          <span id="pillText">丹药 0</span>
+          <span id="killText">斩妖 0</span>
+        </div>
+      </section>
+
+      <section class="hud quest-panel">
+        <h2>宗门令</h2>
+        <p id="questText">斩杀 5 只妖物，夺回青玄谷灵脉。</p>
+        <div class="quest-progress"><span id="questBar"></span></div>
+      </section>
+
+      <section class="hud bottom-left">
+        <div class="skill-row">
+          <button data-skill="slash"><kbd>鼠标/空格</kbd><span>归元剑</span></button>
+          <button data-skill="dash"><kbd>Shift</kbd><span>踏风</span></button>
+          <button data-skill="nova"><kbd>Q</kbd><span>雷火印</span></button>
+          <button data-skill="heal"><kbd>E</kbd><span>服丹</span></button>
+          <button data-skill="breakthrough"><kbd>R</kbd><span>突破</span></button>
+        </div>
+      </section>
+
+      <section class="hud bottom-right">
+        <h2>战利品</h2>
+        <div id="inventoryList" class="inventory-list"></div>
+      </section>
+
+      <section class="hud center-message show" id="centerMessage">
+        <strong>太虚问道</strong>
+        <span>WASD 移动，鼠标瞄准，空格挥剑。进入青玄谷，夺回灵脉。</span>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>

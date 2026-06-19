@@ -1,17 +1,18 @@
 ﻿# 太虚问道
 
+[在线试玩：https://lenhaonan.github.io/taixu/](https://lenhaonan.github.io/taixu/)
+
 一个纯前端修仙动作 RPG 竖切片，打开网页即可游玩。
 
-## 在线部署
+## 在线游玩
 
-本项目是静态站点，适合直接部署到 GitHub Pages、Netlify、Vercel 或任意静态文件服务器。
+直接打开：
 
-GitHub Pages 推荐设置：
+```text
+https://lenhaonan.github.io/taixu/
+```
 
-- Branch: `main`
-- Folder: `/ (root)`
-
-部署后入口文件是仓库根目录的 `index.html`。
+当前项目通过 GitHub Pages 的 `gh-pages` 分支发布。别人不需要安装任何东西，浏览器打开链接即可游玩。
 
 ## 本地运行
 
